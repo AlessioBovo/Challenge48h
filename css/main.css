@@ -30,3 +30,17 @@ body {
 .challenge{
     width: 300px;
 }
+.mort{
+    visibility: hidden;
+    width: 60px;
+}
+.txtPendu{
+    color: whitesmoke;
+    padding-top: 40px;
+}
+#suivant{
+    display: none;
+}
+#perdu{
+    display: none;
+}
