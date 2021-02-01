@@ -58,7 +58,7 @@ function RechercheTab(lettre,tab) {
             validation.style.display='none'
             valeur.style.display='none'
             resultat.style.display='inline'
-            resultat.innerHTML='Vous avez perdu, vous recevez un malus de 2 minutes'
+            resultat.innerHTML='Vous avez perdu, je pensais que vous auriez au moins trouvez ça...'
             suivant.style.display='inline'
         }
     } else {
@@ -86,5 +86,4 @@ function RechercheTab(lettre,tab) {
 function next(){
     divchange.innerHTML="";
     divchange.innerHTML=""//mettre le innerHTML de l'enigme suivante
-
 }
