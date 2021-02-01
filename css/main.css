@@ -1,0 +1,32 @@
+*{
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../assets/salle.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+
+.énoncé{
+    color: whitesmoke;
+    padding-top: 100px;
+}
+
+.launchbutton{
+    margin-top : 50px;
+}
+
+#time{
+  color: whitesmoke;
+  font-size:30px;
+  text-align:center;
+}
+
+.challenge{
+    width: 300px;
+}

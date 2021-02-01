@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='fr'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW'
+        crossorigin='anonymous'></script>
     <title>Escape Game Ynov</title>
 </head>
 
 <body>
+    <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+        <div class='container-fluid'>
+            <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav'
+                aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse' id='navbarNav'>
+                <ul class='navbar-nav'>
+                    <li class='nav-item'>
+                        <a class='nav-link' aria-current='page' href='#'>Home</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='#'>Features</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='#'>Pricing</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link disabled' href='#' tabindex='-1' aria-disabled='true'>Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col'>
+                <div class='text-center'>
+                    <img class='challenge' src='assets/challenge.png' alt='Challenge'>
+                    <div><span id='time'>20:00</span></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col énoncé text-center'>
+            <h3>Bienvenue dans l'Escape Game Ynov. Lorsque vous cliquerez sur ce bouton, vous aurez 20 minutes pour
+                réussir l'ensemble des énigmes. Bonne chance !</h3>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col text-center launch-button'>
+            <button type='button' onclick='launchgame()'
+                class='btn btn-secondary btn-lg launchbutton'>Commencer</button>
+        </div>
+    </div>
 
 </body>
 
