@@ -30,3 +30,61 @@ function showHideYnovWebVisite()
     frameWebVisite.style.display == 'block' ? frameWebVisite.style.display = 'none' : frameWebVisite.style.display = 'block';
     console.log('done');
 }
+
+function checkEnigme7(numero) {
+    if(numero != 4)
+    {
+        document.getElementById('messagereponse').innerHTML='Bravo, vous avez trouvé la bonne réponse.'
+    }
+    else
+    {
+        document.getElementById('messagereponse').innerHTML='Mauvaise réponse. Réesayez.'
+    }
+    
+}
+function enigme7Hint(){
+    window.alert("Salle des conseillères en fomation")
+}
+function crypt(strchiffr, key) {
+    let alphabet ='abcdefghijklmnopqrstuvwxyz';
+    let result ='';
+    let locationLettre;
+
+    for (let i = 0; i < strchiffr.length; i++) {
+        if(strchiffr.charAt(i)==' ')
+        {
+            result+=' '
+        }
+        else
+        {
+            locationLettre=alphabet.indexOf(strchiffr.charAt(i))
+            // console.log(locationLettre)   
+            result+=alphabet.charAt((locationLettre+key) %26) 
+            //console.log( alphabet.charAt((locationLettre+key) %26) );
+        }
+    }       
+    console.log(result);
+    return result;
+}
+
+function déchiffr(strchiffr, key) {
+    let alphabet ='abcdefghijklmnopqrstuvwxyz';
+    let result ='';
+    let locationLettre;
+    key = 26-(key%26)
+    for (let i = 0; i < strchiffr.length; i++) {
+        if(strchiffr.charAt(i)==' ')
+        {
+            result+=' '
+        }
+        else
+        {
+            locationLettre=alphabet.indexOf(strchiffr.charAt(i))
+            // console.log(locationLettre)   
+            result+=alphabet.charAt((locationLettre+key) %26) 
+            //console.log( alphabet.charAt((locationLettre+key) %26) );
+        }
+    }       
+    console.log(result);
+    return result;
+}
