@@ -22,3 +22,11 @@ function launchgame() {
     startTimer(fiveMinutes, display);
 };
 
+function showHideYnovWebVisite()
+{
+    let frameWebVisite;
+    frameWebVisite = document.getElementById('WebVisiteYnov');
+    console.log(frameWebVisite);
+    frameWebVisite.style.display == 'block' ? frameWebVisite.style.display = 'none' : frameWebVisite.style.display = 'block';
+    console.log('done');
+}

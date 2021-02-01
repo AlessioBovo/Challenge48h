@@ -14,7 +14,7 @@ body {
 
 .énoncé{
     color: whitesmoke;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .launchbutton{
@@ -29,4 +29,9 @@ body {
 
 .challenge{
     width: 300px;
+}
+
+#WebVisiteYnov
+{
+    display: none;
 }
