@@ -33,5 +33,17 @@ function changeHTML(){
     a.innerHTML=' ';  
 
     a.innerHTML="<p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>A noté qu'une chose c'est passé dans cette page, il se trouve dans l'outils du navigateur préféré des développeurs web</p>";
+}
+
+function hex2a(hexx) {     
+    var hex = hexx.toString();
+    var str = '';     
+    for (var i = 0; i < hex.length; i += 2)  {     
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16)); 
+    }
+    return str; 
 };
+
+
+
 
