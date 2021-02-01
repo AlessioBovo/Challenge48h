@@ -30,3 +30,13 @@ body {
 .challenge{
     width: 300px;
 }
+
+p{
+    color: white;
+    font-size: 23px;
+    padding-top: 6px;
+}
+
+.result-input{
+    width: 80px;
+}
