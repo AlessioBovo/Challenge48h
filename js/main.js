@@ -139,8 +139,10 @@ function result_end() {
     if (result == 24012) {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
+        let b = document.getElementById('time_delete');
+        b.innerHTML = ' ';
         //<faire une nouvelle page pour stopper le compteur
-        location.href = '../victory.html';
+        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='col énoncé text-center'> <h3>Bravo vous allez pouvoir suivre vos cours à Ynov</h3> </div> </div> </div>";
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore !');
