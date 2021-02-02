@@ -12,6 +12,8 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = 0;
+            window.alert('Le temps est écoulé, vous allez être noté absent !')
+            setTimeout("document.location.reload();", 500);
         }
     }, 1000);
 }
@@ -31,7 +33,7 @@ function result_enigme6() {
         a.innerHTML = '<p>Samir</p> ';
     }
     else {
-        window.alert('Faux');
+        window.alert('Mauvaise Réponse, essaye encore ! ');
     }
 }
 // Si juste envoie à l'énigme 9
@@ -43,7 +45,7 @@ function result_enigme8() {
         a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p>Où se trouve le flamant rose en peluche dans l'administration ?</p> </div> </div> <div class='row text-center'> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Bureau de Vanille</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9V()' class='btn btn-secondary btn-lg '>Bureau de Stéphanie</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans le hall d'entrée</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans la salle de réunion</button> </div> </div> </div>";
     }
     else {
-        window.alert('Faux');
+        window.alert('Mauvaise Réponse, essaye encore !');
     }
 }
 
@@ -67,7 +69,7 @@ function result_enigme10() {
         a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='text-center'> <p>Veuillez entrer le code JSEC afin de justifier votre présence au cours :</p> </div> </div> <div class='row'> <div class='col text-center mx-auto d-block'> <input type='text' id='inputEnd' class=' w-25 text-center'> <button type='button' onclick='result_end()' class='btn btn-secondary btn-lg '>Envoyer !</button> </div> </div> </div> ";
     }
     else {
-        window.alert('Faux');
+        window.alert('Mauvaise Réponse, essaye encore !');
     }
 }
 
@@ -81,7 +83,7 @@ function result_end() {
         a.innerHTML = '<p>Message de fin</p> ';
     }
     else {
-        window.alert('Faux');
+        window.alert('Mauvaise Réponse, essaye encore !');
     }
 }
 
