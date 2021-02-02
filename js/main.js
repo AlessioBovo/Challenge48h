@@ -24,23 +24,49 @@ function launchgame() {
     startTimer(fiveMinutes, display);
     let a = document.getElementById('divchange');
     a.innerHTML=' ';
-    a.innerHTML="<div class='divchange'><div class='row'><div class='col énoncé top_less text-center'><p>Vous êtes bloqués dans le campus car un méchant vous empêche d'en sortir, cause ? </br> Absence non justifiée en attente !  </p></div></div><div class='row'><div class='col énoncé text-center' id='go_down'><p>Afin de trouver son identité, le méchant vous à donner une piste...  </br></br>48,77,71,6e,20,43,65,77,6a,65,6a,61,70</br></br>Résolvez cette piste et vous serez un Hexample ! </p></div></div><div class='row col'><p class='text-center text_enigme2 box'><input type='text' id='rep-01'></input></p><div class='col text-center launch-button'><button type='button' onclick='change_ENIGME_1()' class='btn btn-secondary btn-lg'>Valider</button></div></div></div>";
+    a.innerHTML="<div class='row'><div class='col énoncé top_less text-center'><p>Vous êtes bloqués dans le campus car un méchant vous empêche d'en sortir, cause ? </br> Absence non justifiée en attente !  </p></div></div><div class='row'><div class='col énoncé text-center' id='go_down'><p>Afin de trouver son identité, le méchant vous à donner une piste...  </br></br>48,77,71,6e,20,43,65,77,6a,65,6a,61,70</br></br>Résolvez cette piste et vous serez un Hexample ! </p></div></div><div class='row col'><p class='text-center text_enigme2 box'><input type='text' id='rep-01'></input></p><div class='col text-center launch-button'><button type='button' onclick='change_ENIGME_1()' class='btn btn-secondary btn-lg'>Valider</button></div></div>";
     console.log("prend en compte")
     
-    // initialisation du projet coté egnime 3
-    let b = document.getElementById('debut');
-    b.innerHTML=' ';
-    b.innerHTML="<button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg launchbutton'>Deverouiller l'énigme 3</button>";
 }
+
+function change_ENIGME_1(){
+    let a = document.getElementById('divchange');
+    let rep1 = document.getElementById("rep-01");
+    if (rep1.value == "Hwqna Cewjejappe" ){
+        a.innerHTML=' ';
+        a.innerHTML="<div id = 'divchange'><div class='enigme2' id='enigme2'> <div class='row'> <div class='col-12'> <p class='text-center text_enigme2 box'></p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 énoncé box'>Mais !? Ca ne veut rien dire 'Hwqna Cewjejappe'?</br>mais... avec cette clé un empire vous créerez ! Son décalage se trouve dans le 'Challenge 48h' </p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 box'><input type='text' id='rep-02'></input> </p></div></div><div class='row'> <div class='col-6 mx-auto d-block'> <div class='container text-center'> <button id='singlebutton' name='singlebutton' class='btn btn-light button-start' onclick='change_ENIGME_2();'>Continuer</button> </div></div></div></div></div>";
+    } else {
+    alert("Mauvaise réponse. Dommage !")
+    }
+};
+
+function change_ENIGME_2(){
+    let a = document.getElementById('divchange');
+    let rep1 = document.getElementById("rep-02").value;
+    rep1 = rep1.toLowerCase();
+    if (rep1 == "laure gianinetti"){
+        a.innerHTML=' ';
+        a.innerHTML="<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p>Où se trouve le flamant rose en peluche dans l'administration ?</p> </div> </div> <div class='row text-center'> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Bureau de Vanille</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9V()' class='btn btn-secondary btn-lg '>Bureau de Stéphanie</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans le hall d'entrée</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans la salle de réunion</button> </div> </div> </div>";
+    } else {
+    alert("Mauvaise réponse. Dommage !")
+    }
+
+};
 
 // Lancement du console log + affichage de l'enigme 3
 function change_enigme_3(){
-    let a = document.getElementById('debut');
+    let a = document.getElementById('divchange');
     console.log('QZLJ');
     a.innerHTML=' ';  
-
     a.innerHTML="<p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>A noté qu'une chose c'est passé dans cette page, il se trouve dans l'outils du navigateur préféré des développeurs web</p>";
 }
+
+function enigm_4(){
+    divchange.innerHTML=" ";
+    divchange.innerHTML="<h2 class='txtPendu text-center'>Vous voila face a un pendu.</h2><h2 class='txtPendu text-center'>Petit indice : celle qu'on considère comme la première programmeuse du monde</h2><div class='txtPendu text-center' id='base'> <img class='mort' id='1' src='assets/assetPendu/echec.png'> <img class='mort' id='2' src='assets/assetPendu/echec.png'> <img class='mort' id='3' src='assets/assetPendu/echec.png'> <img class='mort' id='4' src='assets/assetPendu/echec.png'> <img class='mort' id='5' src='assets/assetPendu/echec.png'></div><h3 id='pendu' class='txtPendu text-center'>___ ________</h3><h3 id='tentative' class='txtPendu text-center'></h3> <div class='col txtPendu text-center'> <h3 id='resultat' class='txtPendu text-center'></h3> <input id='valeur' maxlength='1' onchange='VerifValeur(valeur.value,okValues);' onkeypress='this.onchange();' onpaste='this.onchange();' oninput='this.onchange();'> </div> <div class='col text-center launch-button'> <button id='suivant' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='next()'>Suivant</button> <button id='validation' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='RechercheTab(valeur.value,Mot)'>Valider</button> </div></div>"
+    //mettre le innerHTML de l'enigme pendu
+}
+
 
 // Si juste envoie à l'énigme 7
 function result_enigme6() {
@@ -54,6 +80,13 @@ function result_enigme6() {
         window.alert('Mauvaise Réponse, essaye encore ! ');
     }
 }
+
+function change_enigme7()
+{
+    let id = document.getElementById('divchange')
+    id.innerHTML() = '<div class="row"> <object data="https://my.web-visite.com/F1Lbov98B1/29545100p&4.86h&84.47t" id="WebVisiteYnov" type="text/html" width="100%" height="400"></object> <div class="col énoncé text-center"> <h3>Enigme numéro : 7 </h3> <p>Il serait peut etre temps que prendre son envol. Pour ce faire il faudrait retrouver ses tickets. On fait référence a la convention de Varsovie. Mais de quel article ?</p> <p id="messagereponse"></p> <input type="text"> <button type="button" onclick="checkEnigme7()">Soumettre</button> <button type="button" onclick="enigme7Hint()">indice</button> </div> </div> <div class="row"> <div class="col text-center launch-button"> <button type="button" onclick="launchgame()" class="btn btn-secondary btn-lg launchbutton">Commencer</button> </div> </div>'
+}
+
 // Si juste envoie à l'énigme 9
 function result_enigme8() {
     let result = document.getElementById('input8').value;
@@ -106,29 +139,7 @@ function result_end() {
 
 
 
-function change_ENIGME_1(){
-    let a = document.getElementById('divchange');
-    let rep1 = document.getElementById("rep-01");
-    if (rep1.value == "Hwqna Cewjejappe" ){
-        a.innerHTML=' ';
-        a.innerHTML="<div class='enigme2' id='enigme2'> <div class='row'> <div class='col-12'> <p class='text-center text_enigme2 box'></p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 énoncé box'>Mais !? Ca ne veut rien dire 'Hwqna Cewjejappe'?</br>mais... avec cette clé un empire vous créerez ! Son décalage se trouve dans le 'Challenge 48h' </p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 box'><input type='text' id='rep-02'></input> </p></div></div><div class='row'> <div class='col-6 mx-auto d-block'> <div class='container text-center'> <button id='singlebutton' name='singlebutton' class='btn btn-light button-start' onclick='change_ENIGME_2();'>Continuer</button> </div></div></div></div>";
-    } else {
-    alert("Mauvaise réponse. Dommage !")
-    }
-};
 
-function change_ENIGME_2(){
-    let a = document.getElementById('divchange');
-    let rep1 = document.getElementById("rep-02");
-    rep1 = rep1.toLowerCase();
-    if (rep1.value == "laure gianinetti"){
-        a.innerHTML=' ';
-        a.innerHTML="<div class='enigme2 énoncé' id='enigme2'> <div class='row'> <div class='col-12'> <p class='text-center text_enigme2 box'></p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 énoncé box'>Mais !? Ca ne veut rien dire 'Hwqna Cewjejappe'?</br>mais... avec cette clé un empire vous créerez ! Son décalage se trouve dans le 'Challenge 48h' </p></div></div><div class='row'> <div class='col-12'>. <p class='text-center text_enigme2 box'><input type='text' id='reponse_enigme2'></input> </p></div></div><div class='row'> <div class='col-6 mx-auto d-block'> <div class='container text-center'> <button id='singlebutton' name='singlebutton' class='btn btn-light button-start' onclick='change_enigme_3();'>Continuer</button> </div></div></div></div>";
-    } else {
-    alert("Mauvaise réponse. Dommage !")
-    }
-
-};
 
 //fonctions pour le pendu :
 let okValues ='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -189,11 +200,6 @@ function RechercheTab(lettre,tab) {
         pendu.innerHTML = motComplet;
     }
 }
-function enigm_4(){
-    divchange.innerHTML=" ";
-    divchange.innerHTML="<h2 class='txtPendu text-center'>Vous voila face a un pendu.</h2><h2 class='txtPendu text-center'>Petit indice : celle qu'on considère comme la première programmeuse du monde</h2><div class='txtPendu text-center' id='base'> <img class='mort' id='1' src='assets/assetPendu/echec.png'> <img class='mort' id='2' src='assets/assetPendu/echec.png'> <img class='mort' id='3' src='assets/assetPendu/echec.png'> <img class='mort' id='4' src='assets/assetPendu/echec.png'> <img class='mort' id='5' src='assets/assetPendu/echec.png'></div><h3 id='pendu' class='txtPendu text-center'>___ ________</h3><h3 id='tentative' class='txtPendu text-center'></h3> <div class='col txtPendu text-center'> <h3 id='resultat' class='txtPendu text-center'></h3> <input id='valeur' maxlength='1' onchange='VerifValeur(valeur.value,okValues);' onkeypress='this.onchange();' onpaste='this.onchange();' oninput='this.onchange();'> </div> <div class='col text-center launch-button'> <button id='suivant' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='next()'>Suivant</button> <button id='validation' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='RechercheTab(valeur.value,Mot)'>Valider</button> </div></div>"
-    //mettre le innerHTML de l'enigme pendu
-}
 
 //chiffrages
 
@@ -242,11 +248,6 @@ function showHideYnovWebVisite()
     console.log('done');
 }
 
-function change_enigme7()
-{
-    let id = document.getElementById('divchange')
-    id.innerHTML() = '<div class="row"> <object data="https://my.web-visite.com/F1Lbov98B1/29545100p&4.86h&84.47t" id="WebVisiteYnov" type="text/html" width="100%" height="400"></object> <div class="col énoncé text-center"> <h3>Enigme numéro : 7 </h3> <p>Il serait peut etre temps que prendre son envol. Pour ce faire il faudrait retrouver ses tickets. On fait référence a la convention de Varsovie. Mais de quel article ?</p> <p id="messagereponse"></p> <input type="text"> <button type="button" onclick="checkEnigme7()">Soumettre</button> <button type="button" onclick="enigme7Hint()">indice</button> </div> </div> <div class="row"> <div class="col text-center launch-button"> <button type="button" onclick="launchgame()" class="btn btn-secondary btn-lg launchbutton">Commencer</button> </div> </div>'
-}
 
 //Vérifie si la réponse de l'énigme est juste,   
 function checkEnigme7() {
