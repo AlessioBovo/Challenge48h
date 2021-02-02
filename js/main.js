@@ -5,15 +5,15 @@ function startTimer(duration, display) {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
 
-        display.textContent = minutes + ":" + seconds;
+        display.textContent = minutes + ':' + seconds;
 
         if (--timer < 0) {
             timer = 0;
             window.alert('Le temps est écoulé, vous allez être noté absent !')
-            setTimeout("document.location.reload();", 500);
+            setTimeout('document.location.reload();', 500);
         }
     }, 1000);
 }
@@ -30,7 +30,7 @@ function result_enigme6() {
     if (result == 2) {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
-        a.innerHTML = '<p>Samir</p> ';
+        a.innerHTML = "<div class='row'> <object data='https://my.web-visite.com/F1Lbov98B1/29545100p&4.86h&84.47t' id='WebVisiteYnov' type='text/html' width='100%' height='400'></object> <div class='col énoncé text - center'> <h3>Enigme numéro : 7 </h3> <p>Il serait peut etre temps que prendre son envol. Pour ce faire il faudrait retrouver ses tickets. On fait référence a la convention de Varsovie. Mais de quel article ?</p> <p id='messagereponse'></p> <input type='text'> <button type='button' onclick='checkEnigme7()'>Soumettre</button> <button type='button' onclick='enigme7Hint()'>indice</button> </div> </div> <div class='row'> <div class='col text - center launch - button'> <button type='button' onclick='launchgame()' class='btn btn - secondary btn - lg launchbutton'>Commencer</button> </div> </div> ";
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore ! ');
@@ -57,7 +57,7 @@ function result_enigme9F() {
 function result_enigme9V() {
     let a = document.getElementById('divchange');
     a.innerHTML = ' ';
-    a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100%' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p>Quel est le numéro de l'extincteur dans le couloir de l'administration ?</p> </div> </div> <div class='row'> <div class='col text-center mx-auto d-block'> <input type='text' id='input10' class=' w-25 text-center'> <button type='button' onclick='result_enigme10()' class='btn btn-secondary btn-lg '>Envoyer !</button> </div> </div> </div>";
+    a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p>Quel est le numéro de l'extincteur dans le couloir de l'administration ?</p> </div> </div> <div class='row'> <div class='col text-center mx-auto d-block'> <input type='text' id='input10' class=' w-25 text-center'> <button type='button' onclick='result_enigme10()' class='btn btn-secondary btn-lg '>Envoyer !</button> </div> </div> </div>";
 }
 
 // Derniere enigme
@@ -66,7 +66,7 @@ function result_enigme10() {
     if (result == 12) {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
-        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='text-center'> <p>Veuillez entrer le code JSEC afin de justifier votre présence au cours :</p> </div> </div> <div class='row'> <div class='col text-center mx-auto d-block'> <input type='text' id='inputEnd' class=' w-25 text-center'> <button type='button' onclick='result_end()' class='btn btn-secondary btn-lg '>Envoyer !</button> </div> </div> </div> ";
+        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='text - center'> <p>Veuillez entrer le code JSEC afin de justifier votre présence au cours :</p> </div> </div> <div class='row'> <div class='col text - center mx - auto d - block'> <input type='text' id='inputEnd' class=' w - 25 text - center'> <button type='button' onclick='result_end()' class='btn btn - secondary btn - lg '>Envoyer !</button> </div> </div> </div> ";
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore !');
