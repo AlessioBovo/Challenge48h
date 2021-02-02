@@ -106,7 +106,7 @@ function BinToDec(Binary){ // binaire vers decimal
     for (const binaryKey in bin) {
         decimal = decimal + parseInt(bin[binaryKey]) * Math.pow(2,(bin.length-binaryKey-1))
     }
-    return decimal
+    document.getElementById('depart').value = decimal;
 }
 
 function DecToBin(Decimal){ // decimal vers binaire
@@ -125,5 +125,5 @@ function DecToBin(Decimal){ // decimal vers binaire
             puissance--;
         }
     }
-    return Bin;
+    document.getElementById('arrive').value = Bin;
 }
