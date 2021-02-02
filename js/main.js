@@ -219,7 +219,7 @@ function hex2a(hexx) { // hexa vers ascii
     for (var i = 0; i < hex.length; i += 2) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
     }
-    return str;
+    document.getElementById('arrive').value = str;
 }
 
 function BinToDec(Binary) { // binaire vers decimal
@@ -314,10 +314,10 @@ function dechiffr(strchiffr, key) {
         else {
             locationLettre = alphabet.indexOf(strchiffr.charAt(i))
             // console.log(locationLettre)
-            result += alphabet.charAt((locationLettre + key) % 26)
+            result += alphabet.charAt((locationLettre + key+1) % 26)
             //console.log( alphabet.charAt((locationLettre+key) %26) );
         }
     }
     console.log(result);
-    return result;
+    document.getElementById('arrive').value = result;
 }
