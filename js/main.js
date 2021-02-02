@@ -27,6 +27,7 @@ function launchgame() {
     b.innerHTML="<button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg launchbutton'>Deverouiller l'énigme 3</button>";
 }
 
+// Lancement du console log + affichage de l'enigme 3
 function change_enigme_3(){
     let a = document.getElementById('debut');
     console.log('QZLJ');
@@ -35,6 +36,7 @@ function change_enigme_3(){
     a.innerHTML="<p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>A noté qu'une chose c'est passé dans cette page, il se trouve dans l'outils du navigateur préféré des développeurs web</p>";
 }
 
+// Convertisseur hexadécimal en ASCII
 function hex2a(hexx) {     
     var hex = hexx.toString();
     var str = '';     
@@ -42,5 +44,11 @@ function hex2a(hexx) {
         str += String.fromCharCode(parseInt(hex.substr(i, 2), 16)); 
     }
     return str; 
+}
+
+// Convertisseur decimal en binaire
+function dec2bin(dec){
+    var deci = parseInt(dec, 10);
+    return deci.toString(2);
 };
 
