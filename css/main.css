@@ -16,6 +16,10 @@ body {
     color: whitesmoke;
     padding-top: 100px;
 }
+#go_down
+{
+    padding-top: 10px;
+}
 
 .launchbutton{
     margin-top : 50px;
