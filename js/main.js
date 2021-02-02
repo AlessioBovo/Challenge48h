@@ -45,7 +45,7 @@ function change_ENIGME_2() {
     rep1 = rep1.toLowerCase();
     if (rep1 == "laure gianinetti") {
         a.innerHTML = ' ';
-        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>A noté qu'une chose c'est passé dans cette page, il se trouve dans l'outils du navigateur préféré des développeurs web</p> </div> </div> <div class='row text-center'> <div class='col-3'> <input type='text' id='rep-03'></input> <button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg '>valider</button> </div> </div> </div>";
+        a.innerHTML = "<p class='texte_egnime_3'>Laure c'est donc toi la personne qui nous a enfermé ici ! J'ai l'impression qu'il nous manque encore quelques chose , continuons de chercher des indices.</p><div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>À noté qu'une chose c'est passé dans cette page, il se trouve dans l'outil du navigateur préféré des développeurs web</br> Vous devrez vous servir d'un outil déjà utilisé précédement</p> </div> </div> <div class='text-center'> <div> <input class='text-center' type='text' id='rep-03'></input> <button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg text-center'>valider</button> </div> </div> </div>";
         console.log('QZLJ');
     }
     else {
@@ -63,7 +63,7 @@ function change_enigme_3() {
     rep1 = rep1.toLowerCase();
     if (rep1 == "jsec") {
         a.innerHTML = ' ';
-        a.innerHTML = "<h2 class='txtPendu text-center'>Vous voila face a un pendu.</h2><h2 class='txtPendu text-center'>Petit indice : celle qu'on considère comme la première programmeuse du monde</h2><div class='txtPendu text-center' id='base'> <img class='mort' id='1' src='assets/assetPendu/echec.png'> <img class='mort' id='2' src='assets/assetPendu/echec.png'> <img class='mort' id='3' src='assets/assetPendu/echec.png'> <img class='mort' id='4' src='assets/assetPendu/echec.png'> <img class='mort' id='5' src='assets/assetPendu/echec.png'></div><h3 id='pendu' class='txtPendu text-center'>___ ________</h3><h3 id='tentative' class='txtPendu text-center'></h3> <div class='col txtPendu text-center'> <h3 id='resultat' class='txtPendu text-center'></h3> <input id='valeur' maxlength='1' onchange='VerifValeur(valeur.value,okValues);' onkeypress='this.onchange();' onpaste='this.onchange();' oninput='this.onchange();'> </div> <div class='col text-center launch-button'> <button id='suivant' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='change_enigme_6()'>Suivant</button> <button id='validation' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='RechercheTab(valeur.value,Mot)'>Valider</button> </div></div>";
+        a.innerHTML = "<p class='texte_egnime_3'>C'était donc le code jsec que Laure nous à demander. à partir de maintenant il va falloir bien retenir les réponses aux enigmes car elle seront utiles pour la suite.</p><h2 class='txtPendu text-center'>Vous voila face a un pendu.</h2><h2 class='txtPendu text-center'>Petit indice : celle qu'on considère comme la première programmeuse du monde</h2><div class='txtPendu text-center' id='base'> <img class='mort' id='1' src='assets/assetPendu/echec.png'> <img class='mort' id='2' src='assets/assetPendu/echec.png'> <img class='mort' id='3' src='assets/assetPendu/echec.png'> <img class='mort' id='4' src='assets/assetPendu/echec.png'> <img class='mort' id='5' src='assets/assetPendu/echec.png'></div><h3 id='pendu' class='txtPendu text-center'>___ ________</h3><h3 id='tentative' class='txtPendu text-center'></h3> <div class='col txtPendu text-center'> <h3 id='resultat' class='txtPendu text-center'></h3> <input id='valeur' maxlength='1' onchange='VerifValeur(valeur.value,okValues);' onkeypress='this.onchange();' onpaste='this.onchange();' oninput='this.onchange();'> </div> <div class='col text-center launch-button'> <button id='suivant' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='change_enigme_6()'>Suivant</button> <button id='validation' type='button' class='btn btn-secondary btn-lg launchbutton' onclick='RechercheTab(valeur.value,Mot)'>Valider</button> </div></div>";
     } else {
         window.alert("Mauvaise réponse. Dommage !")
     }
@@ -88,7 +88,7 @@ function result_enigme6() {
     if (result == 2) {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
-        a.innerHTML = "<div class='row'> <object data='https://my.web-visite.com/F1Lbov98B1/29545100p&4.86h&84.47t' id='WebVisiteYnov' type='text/html' width='100%' height='400'></object> <div class='col énoncé text-center'> <h3>Enigme numéro : 7 </h3> <p>Il serait peut etre temps que prendre son envol. Pour ce faire il faudrait retrouver ses tickets. On fait référence a la convention de Varsovie. Mais de quel article ?</p> <p id='messagereponse'></p> <input type='text' id='input7'> <button type='button' onclick='checkEnigme7()'>Soumettre</button> <button type='button' onclick='enigme7Hint()'>indice</button> </div> </div> <div class='row'> <div class='col text-center launch-button'> </div> </div> ";
+        a.innerHTML = "<div class='row'> <object data='https://my.web-visite.com/F1Lbov98B1/29545100p&4.86h&84.47t' id='WebVisiteYnov' type='text/html' width='100%' height='400'></object> <div class='col énoncé text-center'> <p>Il serait peut etre temps que prendre son envol. Pour ce faire il faudrait retrouver ses tickets. On fait référence a la convention de Varsovie. Mais de quel article ?</p> <p id='messagereponse'></p> <input type='text' id='input7'> <button type='button' class='btn btn-secondary btn-lg' onclick='checkEnigme7()'>Envoyer</button> <button type='button' class='btn btn-secondary btn-lg' onclick='enigme7Hint()'>indice</button> </div> </div> <div class='row'> <div class='col text-center launch-button'> </div> </div> ";
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore ! ');
@@ -98,7 +98,8 @@ function result_enigme6() {
 // Si juste envoie à l'énigme 9
 function result_enigme8() {
     let result = document.getElementById('input8').value;
-    if (result == 'Noir') {
+    result = result.toLowerCase();
+    if (result == 'noire') {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
         a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <iframe id='inlineFrameExample' title='Inline Frame Example' width='100 % ' height='500' src='https://my.web-visite.com/F1Lbov98B1/29545100p&357.50h&90.90t'> </iframe> </div> <div class='row'> <div class='text-center'> <p>Où se trouve le flamant rose en peluche dans l'administration ?</p> </div> </div> <div class='row text-center'> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Bureau de Vanille</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9V()' class='btn btn-secondary btn-lg '>Bureau de Stéphanie</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans le hall d'entrée</button> </div> <div class='col-3'> <button type='button' onclick='result_enigme9F()' class='btn btn-secondary btn-lg '>Dans la salle de réunion</button> </div> </div> </div>";
@@ -125,7 +126,7 @@ function result_enigme10() {
     if (result == 12) {
         let a = document.getElementById('divchange');
         a.innerHTML = ' ';
-        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='text - center'> <p>Veuillez entrer le code JSEC afin de justifier votre présence au cours :</p> </div> </div> <div class='row'> <div class='col text - center mx - auto d - block'> <input type='text' id='inputEnd' class=' w - 25 text - center'> <button type='button' onclick='result_end()' class='btn btn - secondary btn - lg '>Envoyer !</button> </div> </div> </div> ";
+        a.innerHTML = "<div class='divchange' id='divchange'> <div class='row'> <div class='text-center'> <p>Veuillez entrer le code JSEC afin de justifier votre présence au cours :</p> </div> </div> <div class='row'> <div class='col text-center mx-auto d-block'> <input type='text' id='inputEnd' class=' w-25 text-center'> <button type='button' onclick='result_end()' class='btn btn-secondary btn-lg '>Envoyer !</button> </div> </div> </div> ";
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore !');
