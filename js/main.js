@@ -1,3 +1,4 @@
+
 // Timer réglé sur 20 min. TODO : innerhtml page défaite si arrivé à zero.
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
@@ -227,7 +228,7 @@ function BinToDec(Binary) { // binaire vers decimal
     for (const binaryKey in bin) {
         decimal = decimal + parseInt(bin[binaryKey]) * Math.pow(2, (bin.length - binaryKey - 1))
     }
-    return decimal
+    document.getElementById('depart').value = decimal;
 }
 
 function DecToBin(Decimal) { // decimal vers binaire
@@ -246,7 +247,7 @@ function DecToBin(Decimal) { // decimal vers binaire
             puissance--;
         }
     }
-    return Bin;
+    document.getElementById('arrive').value = Bin;
 }
 function showHideYnovWebVisite() {
     let frameWebVisite;
@@ -257,7 +258,7 @@ function showHideYnovWebVisite() {
 }
 
 
-//Vérifie si la réponse de l'énigme est juste,   
+//Vérifie si la réponse de l'énigme est juste,
 function checkEnigme7() {
     numero = document.getElementById('input7').value;
     if (numero == 4) {
@@ -292,7 +293,7 @@ function crypt(strchiffr, key) {
         }
         else {
             locationLettre = alphabet.indexOf(strchiffr.charAt(i))
-            // console.log(locationLettre)   
+            // console.log(locationLettre)
             result += alphabet.charAt((locationLettre + key) % 26)
             //console.log( alphabet.charAt((locationLettre+key) %26) );
         }
@@ -312,7 +313,7 @@ function dechiffr(strchiffr, key) {
         }
         else {
             locationLettre = alphabet.indexOf(strchiffr.charAt(i))
-            // console.log(locationLettre)   
+            // console.log(locationLettre)
             result += alphabet.charAt((locationLettre + key) % 26)
             //console.log( alphabet.charAt((locationLettre+key) %26) );
         }
