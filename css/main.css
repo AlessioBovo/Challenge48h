@@ -14,7 +14,7 @@ body {
 
 .énoncé{
     color: whitesmoke;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .launchbutton{
@@ -53,4 +53,8 @@ p{
 }
 #perdu{
     display: none;
+}
+#WebVisiteYnov
+{
+    display: block;
 }
