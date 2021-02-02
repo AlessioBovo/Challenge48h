@@ -87,3 +87,42 @@ function next(){
     divchange.innerHTML="";
     divchange.innerHTML=""//mettre le innerHTML de l'enigme suivante
 }
+
+//chiffrages
+
+function hex2a(hexx) {
+    var hex = hexx.toString();
+    var str = '';
+    for (var i = 0; i < hex.length; i += 2)  {
+        str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
+    }
+    return str;
+}
+
+function BinToDec(Binary){
+    let decimal = 0;
+    var bin = Binary.toString()
+    for (const binaryKey in bin) {
+        decimal = decimal + parseInt(bin[binaryKey]) * Math.pow(2,(bin.length-binaryKey-1))
+    }
+    return decimal
+}
+
+function DecToBin(Decimal){
+    let Bin ='';
+    let puissance =1;
+    while(Decimal > Math.pow(2,puissance)){
+        puissance++;
+    }
+    while(puissance>0){
+        if(Decimal-(Math.pow(2,(puissance-1)))>=0){
+        Decimal = Decimal-(Math.pow(2,(puissance-1)))
+        puissance--;
+        Bin=Bin+'1';
+    }else {
+            Bin = Bin + '0';
+            puissance--;
+        }
+    }
+    return Bin;
+}
