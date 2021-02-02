@@ -90,7 +90,7 @@ function next(){
 
 //chiffrages
 
-function hex2a(hexx) {
+function hex2a(hexx) { // hexa vers ascii
     var hex = hexx.toString();
     var str = '';
     for (var i = 0; i < hex.length; i += 2)  {
@@ -99,7 +99,7 @@ function hex2a(hexx) {
     return str;
 }
 
-function BinToDec(Binary){
+function BinToDec(Binary){ // binaire vers decimal
     let decimal = 0;
     var bin = Binary.toString()
     for (const binaryKey in bin) {
@@ -108,7 +108,7 @@ function BinToDec(Binary){
     return decimal
 }
 
-function DecToBin(Decimal){
+function DecToBin(Decimal){ // decimal vers binaire
     let Bin ='';
     let puissance =1;
     while(Decimal > Math.pow(2,puissance)){
