@@ -80,7 +80,6 @@ function result_end() {
         a.innerHTML = ' ';
         //<faire une nouvelle page pour stopper le compteur
         location.href = 'www.apple.com';
-        a.innerHTML = '<p>Message de fin</p> ';
     }
     else {
         window.alert('Mauvaise Réponse, essaye encore !');
