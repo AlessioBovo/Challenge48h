@@ -24,10 +24,10 @@ function launchgame() {
     // initialisation du projet coté egnime 3
     let b = document.getElementById('debut');
     b.innerHTML=' ';
-    b.innerHTML="<button type='button' onclick='changeHTML()' class='btn btn-secondary btn-lg launchbutton'>Deverouiller l'énigme 3</button>";
+    b.innerHTML="<button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg launchbutton'>Deverouiller l'énigme 3</button>";
 }
 
-function changeHTML(){
+function change_enigme_3(){
     let a = document.getElementById('debut');
     console.log('QZLJ');
     a.innerHTML=' ';  
@@ -43,7 +43,4 @@ function hex2a(hexx) {
     }
     return str; 
 };
-
-
-
 
