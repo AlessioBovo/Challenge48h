@@ -58,3 +58,10 @@ p{
 {
     display: block;
 }
+
+.texte_egnime_3{
+    color: whitesmoke;
+    font-size:16px;
+    text-align:center;
+    padding-top: 10%;
+}

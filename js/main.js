@@ -26,8 +26,21 @@ function launchgame() {
     a.innerHTML=' ';
     a.innerHTML="<div class='divchange'><div class='row'><div class='col énoncé top_less text-center'><p>Vous êtes bloqués dans le campus car un méchant vous empêche d'en sortir, cause ? </br> Absence non justifiée en attente !  </p></div></div><div class='row'><div class='col énoncé text-center' id='go_down'><p>Afin de trouver son identité, le méchant vous à donner une piste...  </br></br>48,77,71,6e,20,43,65,77,6a,65,6a,61,70</br></br>Résolvez cette piste et vous serez un Hexample ! </p></div></div><div class='row col'><p class='text-center text_enigme2 box'><input type='text' id='rep-01'></input></p><div class='col text-center launch-button'><button type='button' onclick='change_ENIGME_1()' class='btn btn-secondary btn-lg'>Valider</button></div></div></div>";
     console.log("prend en compte")
-};
+    
+    // initialisation du projet coté egnime 3
+    let b = document.getElementById('debut');
+    b.innerHTML=' ';
+    b.innerHTML="<button type='button' onclick='change_enigme_3()' class='btn btn-secondary btn-lg launchbutton'>Deverouiller l'énigme 3</button>";
+}
 
+// Lancement du console log + affichage de l'enigme 3
+function change_enigme_3(){
+    let a = document.getElementById('debut');
+    console.log('QZLJ');
+    a.innerHTML=' ';  
+
+    a.innerHTML="<p class='texte_egnime_3'>Il vous faudra visiter le campus pour trouver la salle en face de Superman et de noté son chiffre dans un coin de vôtre tête.</br>A noté qu'une chose c'est passé dans cette page, il se trouve dans l'outils du navigateur préféré des développeurs web</p>";
+}
 
 // Si juste envoie à l'énigme 7
 function result_enigme6() {
